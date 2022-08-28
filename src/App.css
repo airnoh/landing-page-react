@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Josefin+Sans:wght@100;700&family=Poppins:wght@300;400;700;800&family=Roboto:wght@300&family=Unica+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Unica One", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.welcome-section {
+  width: fit-content;
+  margin: auto;
+  background-color: #272626;
   color: white;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-section > h1 {
+  font-size: 2rem;
+  /* font-style: oblique; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lorem2 {
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+
+.lorem3 {
+  font-size: 1.2rem;
+}
+.image1 {
+  height: 300px;
+  width: 300px;
+}
+
+.lorem-contain {
+  bottom: 1px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.575);
+}
+
+.lorem-contain :nth-child(1) {
+  color: blueviolet;
+}
+
+@media (max-width: 1024px) {
+  .welcome-section {
+    width: 100%;
+    margin: auto;
+    background-color: #272626;
+    color: white;
+    padding: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .our-mobile-container {
+    text-align: center;
+  }
+  .image-container {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image2 {
+    margin-bottom: 40px;
+  }
+
+  .lorem-contain {
+    position: absolute;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .image2 {
+    height: 150px;
+    width: 150px;
+  }
+
+  .image1 {
+    height: 150px;
+    width: 150px;
+  }
+}
+.word button:hover{
+  background-color: white;
+  color: black;
+  border: none;
+}
+.word .btn1 {
+  border-radius: 100px;
+  font-size: 120%;
+  width: 30%;
+}
+@media (max-width: 779px) {
+  .word .btn1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .box {
+    margin-bottom: 20px;
+  }
+}
+
+.pricingsection {
+  background-color: #5559D6;
+  min-height: 100vh;
+}
+.app_pricing h2 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 100;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  padding: 50px;
+}
+.app_pricing h2::after {
+  display: block;
+  height: 1px;
+  background-color: white;
+  content: " ";
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.box {
+  gap: 1%;
+}
+.box button {
+  border-radius: 20px;
+  position: relative;
+  top: 4rem;
+  width: 80%;
+}
+.box button:hover {
+  background-color: blue;
+  border: 1px solid blue;
+}
+.font {
+  font-size: 248%;
+}
+
+@media (max-width: 770px) {
+  .box {
+    display: block;
+    padding-bottom: 10px;
+  }
+  /* .middle1 {
+    margin-bottom: 40px;
+  } */
+  .middle {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 995px) {
+  .box button {
+    padding: 2%;
+    width: 100%;
   }
 }
